@@ -1,0 +1,46 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "types/**/*"
+  ],
+  "references": [
+    {
+      "path": "tsconfig.test.json"
+    },
+  ],
+  "files": [
+    "package.json"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ],
+      "types/*": [
+        "types/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true
+  }
+}
